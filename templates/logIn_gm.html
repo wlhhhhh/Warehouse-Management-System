@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="../static/css/logIn.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="logIn">
+		<div class="main">
+			<div class="title">
+				<div>
+					教室租用系统
+				</div>
+				<div style="background-image: url(../static/img/log_gm.png);">
+					<!--放图片-->
+				</div>
+				<div>
+					注册
+				</div>
+			</div>
+			<div class="form">
+				<form>
+					<input type="text" name="user" placeholder="账号"/>
+					<input type="password" name="pw" placeholder="密码"/>
+					<input type="submit" value="注册"/>
+					<a href="{{ url_for('login') }}">
+						切换登录
+					</a>
+				</form>
+			</div>
+		</div>
+		<div class="bottom">
+			数据库项目<br/>
+		</div>
+	</div>
+<script type="text/javascript" src='/static/js/jquery.min.js'></script>
+<script type="text/javascript" src='/static/js/register.js'></script>
+</body>
+</html>
